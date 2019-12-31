@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:expandable="clr-namespace:OC.Xamarin.Forms.ExpandableView;assembly=OC.Xamarin.Forms.ExpandableView"
+             x:Name="page"
+             x:Class="SampleApp.ExpandableView.ExpandableViewSample">
+    <ContentPage.Content>
+        <StackLayout Padding="8">
+            <expandable:ExpandableView x:Name="ExpandableViewControl"
+                                       BackgroundColor="Red"
+                                       TouchHandlerView="{x:Reference arrow}"
+                                       CommandParameter="parameter"
+                                       Command="{Binding Path=TapCommand, Source={x:Reference page}}" 
+                                       ExpandAnimationLength="100">
+                <expandable:ExpandableView.PrimaryView>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Expandable view" FontSize="Body" VerticalTextAlignment="Center"/>
+                        <Image x:Name="arrow" Source="arrow_drop_down.png" HeightRequest="60" WidthRequest="60" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </expandable:ExpandableView.PrimaryView>
+
+                <expandable:ExpandableView.SecondaryViewTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5">
+                            <Label Text="Item" FontSize="Large"/>
+                            <Label Text="Item" FontSize="Large"/>
+                            <Label Text="Item" FontSize="Large"/>
+                            <Label Text="Item" FontSize="Large"/>
+                            <Label Text="Item" FontSize="Large"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </expandable:ExpandableView.SecondaryViewTemplate>
+            </expandable:ExpandableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
