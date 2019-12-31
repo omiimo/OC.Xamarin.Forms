@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>OC.Xamarin.Forms.ExpandableView</id>
+    <version>1.0.0</version>
+    <title>OC.Xamarin.Forms.ExpandableView</title>
+    <authors>Omprakash Choudhary</authors>
+    <owners>Omprakash Choudhary</owners>
+    <projectUrl>https://github.com/omiimo/OC.Xamarin.Forms/tree/master/OC.Xamarin.Forms.ExpandableView</projectUrl>
+    <iconUrl>https://image.flaticon.com/icons/svg/60/60781.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Expandable view for Xamarin.Forms</description>
+	<summary>This control provides ability to create expandable views</summary>
+	<tags>expandableView, expanded, expander, expandable, expandable view, collapse, collapsable, forms, xamarin forms, xamarin.forms</tags>
+   
+    <copyright>Copyright 2019</copyright>
+	<dependencies>
+      <group>
+          <dependency id="Xamarin.Forms" version="2.4" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+  <!--Net Standard-->
+    <file src="bin\Release\netstandard2.0\OC.Xamarin.Forms.ExpandableView.dll" target="lib\netstandard2.0\OC.Xamarin.Forms.ExpandableView.dll" />
+    <!--Core PCL-->
+    <file src="bin\Release\netstandard2.0\OC.Xamarin.Forms.ExpandableView.dll" target="lib\portable-win+net45+wp80+win81+wpa81\OC.Xamarin.Forms.ExpandableView.dll" />
+    <!--Xamarin.Android-->
+    <file src="bin\Release\netstandard2.0\OC.Xamarin.Forms.ExpandableView.dll" target="lib\MonoAndroid10\OC.Xamarin.Forms.ExpandableView.dll" />
+    <!--Xamarin.iOS-->
+    <file src="bin\Release\netstandard2.0\OC.Xamarin.Forms.ExpandableView.dll" target="lib\Xamarin.iOS10\OC.Xamarin.Forms.ExpandableView.dll" />
+  </files>
+</package>
